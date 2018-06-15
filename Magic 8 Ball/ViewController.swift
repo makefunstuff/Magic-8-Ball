@@ -9,12 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var ballElement: UIImageView!
+    
+    let ballStates = getBallStates()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        renderRandomBall()
     }
 
-
+    @IBAction func ask(_ sender: UIButton) {
+        renderRandomBall()
+    }
+    
+    private static func getBallStates() -> [String] {
+        return Array(1...5).map { element in "ball\(element)" }
+    }
+    
+    private func renderRandomBall() {
+        let imageName = ballStates[Int.random(in: 1 ..< 5)]
+        ballElement.image = UIImage(named: imageName)
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        renderRandomBall()
+    }
+    
 }
 

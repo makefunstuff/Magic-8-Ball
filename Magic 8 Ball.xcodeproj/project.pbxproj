@@ -22,6 +22,7 @@
 		34DD61BC20D3EE9A003C1EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34DD61BF20D3EE9A003C1EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34DD61C120D3EE9A003C1EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34DD61C720D3F304003C1EB4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				34DD61BC20D3EE9A003C1EB4 /* Assets.xcassets */,
 				34DD61BE20D3EE9A003C1EB4 /* LaunchScreen.storyboard */,
 				34DD61C120D3EE9A003C1EB4 /* Info.plist */,
+				34DD61C720D3F304003C1EB4 /* README.md */,
 			);
 			path = "Magic 8 Ball";
 			sourceTree = "<group>";
